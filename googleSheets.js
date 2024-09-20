@@ -24,7 +24,7 @@ $('#submissionForm').submit((e) => {
     console.log('Sending data:', data);
 
     // ส่งข้อมูลไปยัง Google Apps Script Web App URL
-    $.post('https://script.google.com/macros/s/AKfycbyiIo-xijWCLAVkDbYmZMzzw6gI9gd0THO82_zpUmwe0Zc2NeJWAW-hKr_I2X4lHGlH/exec', data, function(res) {
+    $.post('https://script.google.com/macros/s/AKfycbycZdk3jpr9LdCDonmi9g2g2ZokHPRUix_dzhhjmgE8yrrqJ5MQt4xZZRUKy49tlq8Nqw/exec', data, function(res) {
         if (res.status == 'success') {
             console.log('Response from Google Apps Script:', res);
             $('#submissionForm').trigger('reset'); // รีเซ็ตฟอร์มหลังส่งข้อมูลสำเร็จ
