@@ -1,0 +1,15 @@
+<script>
+  function submitForm() {
+    const data = [
+      document.getElementById('branch').value,
+      document.getElementById('service').value,
+      document.getElementById('date').value,
+      document.getElementById('time').value,
+      document.getElementById('hn').value,
+      document.getElementById('phone').value,
+      generateUUID()
+    ];
+    
+    appendDataToSheet('1OxzSL5BQNAhuglf43FNEr8x8vMP-7K7R4jf36V6FKsQ', data);
+  }
+</script>
